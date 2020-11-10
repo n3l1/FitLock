@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Bodoni;
+    src: url("Bauer\ Bodoni\ Std\ 1\ Roman.otf");
+}
+@font-face {
+    font-family: Didiot; 
+    src: url("Didot.ttc")
+}
+header {
+    background-image: url("header_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h1 {
+    color: white;
+    font-size: 30px;
+    font-family: Bodoni;
+    text-align: center;    
+}
+h4 {
+    color:white;
+    font-size: 20px;
+    font-family: Bodoni;
+    text-align: center
+}
+
+div.Home_menu a {
+float: left;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: solid;
+font-size: 17px;
+margin-top: 10%
+
+}
