@@ -1,42 +1,205 @@
+/* Adding external Bodoni font*/
 @font-face {
     font-family: Bodoni;
     src: url("Bauer\ Bodoni\ Std\ 1\ Roman.otf");
 }
+
+/* Adding external Didiot font*/
 @font-face {
     font-family: Didiot; 
     src: url("Didot.ttc")
 }
-header {
-    background-image: url("header_img.jpg");
+
+html {
+    scroll-behavior: infinite; 
+    overflow-y: scroll; 
+}
+
+/* Settings for background image (with gradient) and body*/
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("header_img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: relative;
+    width: 100vw;
+    height: 100vh; 
+    position: relative;
+    font: Arial;  
+    color: white; 
+    overflow-y: scroll; 
+}
+
+/* Settings for Lockdown Fitness heading*/
+
+  h2 {
+      position: absolute; 
+      top: 30px; 
+      left: 16px; 
+      color: white;
+      font-size: 30px;
+      font-family: Bodoni;
+      text-align: left; 
+  }
+
+  /* Heading for subheading in header*/
+
+  h4 {
+      position: absolute;
+      top: 90px;
+      left: 16px;
+      color:white;
+      font-size: 20px;
+      font-family: Bodoni;
+      text-align: left;
+  }
+
+  /*Setting for text to accompany image gallery*/
+
+  .activatefitness {
+      color: white; 
+      position: absolute; 
+      top: 275px; 
+      text-align: center;
+      left: 25%; 
+      right: 25%;  
+      font-size: 20px; 
+  }
+
+  /* Settings for entire image gallery (all three images)*/
+
+div.gallery {
+    border: 1px solid #ccc; 
+}
+
+div.gallery:hover {
+    border: 1px solid #777; 
+}
+
+div.gallery img {
+    width: 305px; 
+    height: 250px; 
+}
+
+/*Settings for image gallery text*/
+
+div.description {
+    padding: 15px; 
+    text-align: center;  
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+/*Settings for images*/
+
+.responsive {
+    padding: 6px;  
+    width: 24.99999%; 
+    position: relative; 
+    top: 400px; 
+    left: 12%;
+    right: 12%; 
+    float: left; 
+}
+
+.clearfix:after {
+    content: "";
+    display: table; 
+    clear: both; 
+}
+
+/*Subscribe form setting*/
+
+form {
+    text-align: center;
+    position: relative;
+    top: 450px; 
+}
+
+input[type=text], {
     width: 100%;
-    height: 45%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-h1 {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .subscribebutton {
+    background-color: #006064;
     color: white;
-    font-size: 30px;
-    font-family: Bodoni;
-    text-align: center;    
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+    position: absolute; 
+    left: 45%;
+    right: 45%; 
+  }
+
+/*topnav bar setting*/
+
+.Home_menu {
+    overflow: hidden;
+    background-color: #d0cdcc;
 }
-h4 {
-    color:white;
-    font-size: 20px;
-    font-family: Bodoni;
-    text-align: center
+
+div.Home_menu {
+    position: relative; 
+    top: 25%;
+    left: 0;
+    right: 0
 }
 
 div.Home_menu a {
 float: left;
-color: white;
+display: block;
+color: black; 
 text-align: center;
 padding: 14px 16px;
-text-decoration: solid;
+text-decoration: none;
 font-size: 17px;
-margin-top: 10%
-
 }
+
+.Home_menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.Home_menu a.active {
+    background-color: #006064;
+    color: white
+}
+
+.Home_menu input[type=text] {
+    float:right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .Home_menu a, .Home_menu input [type=text]{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px; 
+    }
+
+.Home_menu input[type=text] {
+        border: 1px solid #ccc;
+    }
