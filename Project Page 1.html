@@ -10,6 +10,7 @@
 <div class="header text">
 <h2>Lockdown Fitness</h2>
 <h4>Tips and trick to help you stay fit during lockdown</h4>
+<h3>Start your fitness journey with us</h3>
 </div>
 <!-- Finish header text-->
 <!-- Start header nav bar -->
@@ -17,16 +18,11 @@
     <a class="active" href="Project Page 1.html">Home</a>
     <a href="Project Page 1.html">Activate Your Fitness</a>
     <a href="Project Page 1.html">Explore</a>
-    <a href="Project Page 1.html">About us</a>
+    <a href="About us page.html">About us</a>
     <input type="text" placeholder="Search...">
 </div>
 <!-- Finish header nav bar -->
-<!-- Start text for explore and activate fitness section-->
-<div class="activatefitness">
-</h3>Start your fitness journey with us</h3>
-<p>Choose from one of our programmes or explore and try our standalone classes.</p>
-</div>
-<!-- Finish text for explore and activate fitness section-->
+
 <!-- Start image gallery with link to other pages-->
 <div class="responsive">
  <div class="gallery">
@@ -34,7 +30,8 @@
         <img src="main_image1.jpeg" alt="Activate Your Fitness">
     </a>
     <div class="description">Activate Your Fitness</div>
- </div>
+    <a href="#" class="btn btn-lg btn-secondary">Activate</a> 
+</div>
 </div>
 
 <div class="responsive">
@@ -42,8 +39,9 @@
     <a target="_self" href="Project Page 1.html">
         <img src="main_image2.jpeg" alt="Explore">
     </a>
-    <div class="description">Explore a variety of workouts for all levels</div>
- </div>
+    <div class="description">Explore a variety of workouts</div>
+    <a href="#" class="btn btn-lg btn-secondary">Explore</a>
+</div>
 </div>
 
 <div class="responsive">
@@ -51,8 +49,9 @@
     <a target="_self" href="Project Page 1.html">
         <img src="main_image3.jpg" alt="More information">
     </a>
-    <div class="description">Find out more about Lockdown Fitness</div>
- </div>
+    <div class="description">Learn more about us</div>
+    <a href="#" class="btn btn-lg btn-learnmore">Learn more</a> 
+</div>
  </div>
  <div class="clearfix"></div>
 
@@ -61,16 +60,38 @@
 <!-- Start subscribe form-->
  <form action="Project Page 1.html" style="border:none">
  <div class="subscribeform">
-     <p>Subscribe below to receive updates with new workouts, don't worry you can unsubscribe anytime</p>
+     <p>Subscribe below to receive updates with new workouts, you can unsubscribe anytime!</p>
      <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
     <div class="subscribebutton">
-        <button type="submit" class="signupbtn">Subscribe</button>
+        <a href="#" class="btn btn-lg btn-subscribe">Subscribe</a> 
     </div>
  </div>
 </form>
 <!-- Finish subscribe form-->
 </body>
 <footer>
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="social-wrapper">
+    <ul>
+      <li>
+        <a href="#" target="_blank">
+          <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+      </li>
+      <li>
+        <a href="#" target="_blank">
+          <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+      </li>
+    </ul>
+  </div>
+
+  <nav class="footer-nav" role="navigation">
+    <p>Copyright &copy; 2020 
+      <?php echo date("Y"); ?> Lockdown Fitness</p>
+  </nav>
 </footer>
 </html>
