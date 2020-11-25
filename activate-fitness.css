@@ -6,6 +6,7 @@ body {
   font-weight: 200;
   color: #000000;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -99,13 +100,58 @@ svg{
 
 .grid-item {
   background-color: #EEEEEE;
-  padding: 20px;
+  padding: 0px;
   border: 1px solid #00BCD4;
   font-size: 20px;
   text-align: center;
 }
 
-/**/
+/*Subscribe form setting*/
+
+p {
+  font-size: 15px; 
+  font-family: Verdana, Tahoma, sans-serif; 
+}
+
+form {
+  text-align: center;
+  position: relative;
+  top: 100px; 
+  padding-bottom: 35px; 
+}
+
+input[type=text], {
+  width: 100%;
+  padding: 30px;
+  margin: 50px 0 22px 0;
+  display: inline-block;
+  border: none;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Custom default button */
+.btn-subscribe,
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+color: #333;
+text-shadow: none; /* Prevent inheritance from `body` */
+background-color: #6699CC;
+border: .05rem solid #6699CC; 
+padding: 15px 45px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+position: relative;
+top: 35px; 
+left: 0%; 
+right: 30%;
+border-radius: 20px; 
+}
 
 /*footer settings*/
 
